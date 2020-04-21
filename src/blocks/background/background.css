@@ -1,0 +1,6 @@
+@import url(./__page/background__page.css);
+@import url(./__user-photo/background__user-photo.css);
+
+.background {
+		background-color: black;
+}
