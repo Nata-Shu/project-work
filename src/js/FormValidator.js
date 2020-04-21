@@ -1,4 +1,4 @@
-class FormValidator {
+export default class FormValidator {
 
 	constructor(id) {
 			id.forEach((item) => {

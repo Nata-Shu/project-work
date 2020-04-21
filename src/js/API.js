@@ -1,4 +1,4 @@
-class Api {
+export default class Api {
 
 	constructor(server, token) {
 			this.server = server;
