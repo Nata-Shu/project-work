@@ -64,10 +64,10 @@ module.exports = {
             filename: 'index.html'
           }),
         new WebpackMd5Hash(),
-        new webpack.DefinePlugin({
-					'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-        }),
-        new webpack.SourceMapDevToolPlugin({
+				new webpack.DefinePlugin({
+					API_URL: JSON.stringify(isDev ? 'http://praktikum.tk' : 'https://praktikum.tk'),
+				}),
+				new webpack.SourceMapDevToolPlugin({
 					filename: '[file].map'
         })
     ]

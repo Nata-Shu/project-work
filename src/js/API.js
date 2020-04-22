@@ -1,8 +1,8 @@
 export default class Api {
 
-	constructor(server, token) {
-			this.server = server;
-			this.token = token;
+	constructor(url, cohort9, token) {
+		this.server = `${url}/${cohort9}`;
+		this.token = token;
 	}
 
 	getUserInfoFromServer() {
