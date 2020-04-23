@@ -1,5 +1,5 @@
 import "./index.css";
-import Api from './js/Api';
+import Api from './js/API';
 import Card from './js/Card';
 import CardList from './js/CardList';
 import FormValidator from './js/FormValidator';
