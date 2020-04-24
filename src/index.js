@@ -1,4 +1,10 @@
-'use strict';
+import "./index.css";
+import Api from './js/API';
+import Card from './js/Card';
+import CardList from './js/CardList';
+import FormValidator from './js/FormValidator';
+import Popup from './js/Popup';
+import UserInfo from './js/UserInfo';
 
 (function() {
   const addForm = document.forms.new;
@@ -35,7 +41,7 @@
   const avatarPopupCloseBtn = avatarPopup.querySelector('.popup__close');
   const avatarPopupSubmitBtn = avatarPopup.querySelector('.button_avatarSave');
 
-  const api = new Api('https://praktikum.tk/cohort9', '246c23bd-e825-47d2-87a3-439fef42a916');
+  const api = new Api(API_URL, 'cohort9', '246c23bd-e825-47d2-87a3-439fef42a916');
 
   const card = new Card();
   const popup = new Popup(addPopup, profilePopup, avatarPopup);

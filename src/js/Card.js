@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
     
 	myCard(name, link, _id, likes) {
 			return `<div class="place-card" id='${_id}'>
@@ -47,7 +47,6 @@ class Card {
 			if (event.target.classList.contains('place-card__like-icon')) {
 					switch (event.target.classList.contains('place-card__like-icon_liked')) {
 							case true:
-									// Убрать лайк
 									event.target.classList.remove('place-card__like-icon_liked');
 									api.deleteLike(event.target.closest('.place-card').getAttribute('id'))
 											.then(data => {
@@ -55,7 +54,6 @@ class Card {
 											});
 									break
 							case false:
-									// Поставить лайк
 									event.target.classList.add('place-card__like-icon_liked');
 									api.putLike(event.target.closest('.place-card').getAttribute('id'))
 											.then(data => {
